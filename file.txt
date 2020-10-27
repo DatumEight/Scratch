@@ -1,0 +1,25 @@
+mysql> select count (*) from Track;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) from Track' at line 1
+mysql>  test.sql
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'test.sql' at line 1
+mysql> run test.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'run test.sql' at line 1
+mysql> source test.sql;
+mysql> 
+mysql> source test.sql;
+mysql> quitl\
+    -> quit\
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'quitl
+quit' at line 1
+mysql> quit\;
+ERROR: 
+Unknown command '\;'.
+    -> quit;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'quit\;
+quit' at line 1
+mysql> quit\
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'quit' at line 1
+mysql> quit;
